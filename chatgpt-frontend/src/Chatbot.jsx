@@ -14,7 +14,7 @@ const Chatbot = () => {
         setMessages(newMessages);
 
         try {
-            const res = await axios.post('https://mini-chat-bot-3.onrender.com/', { message: input });
+            const res = await axios.post(`${import.meta.env.VITE_API_URL}/`, { message: input });
 
 
             setMessages([
