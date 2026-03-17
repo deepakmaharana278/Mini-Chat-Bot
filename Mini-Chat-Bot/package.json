@@ -1,0 +1,19 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "frontend": "cd chatgpt-frontend && npm run dev",
+  "backend": "cd chatbot_project && python manage.py runserver",
+  "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+}
+
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
