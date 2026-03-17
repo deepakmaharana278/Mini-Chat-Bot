@@ -6,6 +6,10 @@ Deepak-GPT is a full-stack chatbot application built with **Django** as the back
 
 The project allows users to interact with an AI assistant similar to ChatGPT, directly from the web interface.
 
+## Live Demo
+
+[Deepak-Gpt](https://mini-chat-bot-5.onrender.com/)
+
 ## Features
 
 * Real-time chat interface
