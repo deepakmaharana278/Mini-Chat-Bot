@@ -1,0 +1,12 @@
+on_http_request:
+  - expressions:
+      - "!hasReqHeader('Authorization') || getReqHeader('Authorization')[0] != 'Bearer demo-secret-123'"
+    actions:
+      - type: deny
+        config:
+          status_code: 401
+  - actions:
+      - type: add-headers
+        config:
+          headers:
+            host: localhost:11434
